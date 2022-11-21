@@ -8,6 +8,7 @@
 
 .product-slider {
   padding: 20px 10px;
+  position: relative;
 }
 @media (min-width: 1024px) {
   .product-slider {
@@ -49,22 +50,24 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
 }
 
 .text-center .active-item a {
   color: #EE2E24;
 }
 
-.slider-center {
-  position: relative;
+.text-center a:hover {
+  color: #EE2E24;
 }
+
 @media (max-width: 479px) {
-  .slider-center {
+  .list-item {
     flex-direction: row;
   }
 }
 @media (min-width: 1024px) {
-  .slider-center {
+  .list-item {
     max-height: 340px;
     display: flex;
     justify-content: center;
@@ -121,14 +124,14 @@
 }
 @media (min-width: 1024px) {
   .row-left {
-    left: -20px;
+    left: 5%;
     top: 35%;
   }
 }
 @media (max-width: 479px) {
   .row-left {
     left: 0;
-    top: 10px;
+    top: 10%;
   }
 }
 
@@ -144,14 +147,14 @@
 }
 @media (min-width: 1024px) {
   .row-right {
-    right: -20px;
+    right: 5%;
     top: 35%;
   }
 }
 @media (max-width: 479px) {
   .row-right {
     right: 0px;
-    bottom: -10px;
+    bottom: 5%;
   }
 }
 

@@ -59,6 +59,7 @@ $font-style: normal;
         padding: 50px 100px; 
     } 
     padding: 20px 10px;  
+    position: relative;
 }
 .menu-slider{
     border-bottom: $color-origin 1px solid;
@@ -86,11 +87,15 @@ $font-style: normal;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    display: block;
 }
 .text-center .active-item a{
     color: $color-primary;
 }
-.slider-center{
+.text-center a:hover{
+    color: $color-primary;
+}
+.list-item{
     @include mobile {     
         flex-direction: row;
     } 
@@ -99,7 +104,6 @@ $font-style: normal;
         display: flex;
         justify-content: center;
     } 
-    position: relative;
 }
 .item-product{
     width: 300px;
@@ -129,23 +133,23 @@ $font-style: normal;
 .row-left{
     @include row-right-left;
     @include desktop {     
-        left: -20px;
+        left: 5%;
         top: 35%;
     }
     @include mobile() {     
         left: 0;
-        top: 10px;
+        top: 10%;
     }
 }
 .row-right{
     @include row-right-left;
     @include desktop {     
-        right: -20px;
+        right: 5%;
         top: 35%;
     }
     @include mobile() {     
         right: 0px;
-        bottom: -10px;
+        bottom: 5%;
     }
 }
 .prev{
